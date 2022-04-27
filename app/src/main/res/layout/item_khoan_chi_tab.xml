@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:src="@drawable/ic_khoanchi"
+            android:layout_width="50dp"
+            android:padding="8dp"
+            android:background="@drawable/avatar_circle"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/tvTenKhoanChiTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:text="Lãi ngân hàng"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMaLoaiKhoanChiTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/ivKhoanChiTab"
+            android:text="Lãi ngân hàng"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGiaKhoanChiTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenKhoanChiTab"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:text="500"
+            android:textColor="#ff1100"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNgayKhoanChiTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTenKhoanChiTab"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/ivKhoanChiTab"
+            android:text="11-11-2021"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/ivKhoanChiTab"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_item_options" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

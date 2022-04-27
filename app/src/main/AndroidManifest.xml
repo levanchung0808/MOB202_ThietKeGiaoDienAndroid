@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ps19319_levanchung_asm">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_finish"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_finish"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PS19319_LeVanChung_ASM">
+        <activity
+            android:name=".NhapLaiMaPinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoiMaPinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
